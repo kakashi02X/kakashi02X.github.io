@@ -99,14 +99,34 @@ Great!!  Now Computations are now reduced with respect to first approach.
 
 The above same divide and Conquer Approach used by East India Company, is now labeled as **O(LogN)**, quite Better than the **Linear complexity O(n)**, which is the first solution.
 
+**How is logn better than n**
+
+Found this Example from a StackOverflow [post](https://stackoverflow.com/questions/10369563/difference-between-on-and-ologn-which-is-better-and-what-exactly-is-olo#:~:text=O(n)%20means%20that%20the,in%20terms%20of%20algorithms%20analysis)
+
+Consider 2 computers : A and B. Both Computers have a task of searching an array for a value Let's assume the arrays have 10 million elements to be searched through
+
+**Computer A**- This computer can execute 1 billion instructions per second and is expected to perform the above task using an algorithm with a complexity of O(n). We can approximate the time is takes this computer to complete the task as
+
+**n/(instructions p second) → 10^7/10^9 = 0.01 seconds**
+
+**Computer B**- This computer is much more slower, and can execute only 10 million instructions per second. Computer B is expected to perform the above task using an algorithm with a complexity of O(log n). We can approximate the time is takes this computer to complete the task as
+
+**log(n) /(instructions p second) → log(10^7)/10^7 =  0.0000007**
+
+> Thus Computer B outperforms computer A, through its algorithmic efficiency.
+
 ##### Time Complexities:
-- Constant Time: O(1)
-- Linear Time: O(n)
-- Logarithmic Time: O(log n)
-- Quadratic Time: O(n^2)
-- Exponential Time: O(2^n)
 
-Quadratic and above involves loops more than one, Hence its considered worse in terms of Complexity and ideally the solution should always try to fit atleast in the first 3 Complexities.
+| Complexity                   | How to Identify/Scenario  
+| :--------------------------- | :--------------- | 
+| Constant Time: O(1)          | No Loops or Iteration|
+| Linear Time: O(n)           | 1 Loop    |
+| Logarithmic Time: O(log n) | Half the Search, Divide and Conquer |
+| Linearithmic Time: O(n log n) | divide And Conquer Alogirthm Done Repeatedly |
+| Quadratic Time: O(n^2) | Nested loops |
+| Exponential Time: O(2^n) | Kind of Perumatations and combinations |
+| Factorial Time: O(n!) | Eg: BruteForce Algorithms , Travelling Sales Man Problem |
 
-> Next time, When you try Leet Code or Similar challenges, Remember that its not the solution, But the Efficiency that matters. Most of the Solutions can be derived by a two or more loop Solution. Although its a good place to start, its not the final solution. Optimize it to fit into top 3 Green zones.
+
+> Next time, When you try Leet Code or Similar challenges, Remember that its not the solution, But the Efficiency that matters. Most of the Solutions can be derived by a two or more loop Solution. Although its a good place to start, its not the final solution. Optimize it to fit into the Green zones.
 {: .prompt-tip }
