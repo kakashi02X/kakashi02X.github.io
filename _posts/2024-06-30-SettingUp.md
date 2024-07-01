@@ -28,5 +28,6 @@ Unlike the conventional wordpress or Social Media posts, This post is fired up u
             command: bundle exec jekyll s --force_polling -H 0.0.0.0 -P 4000 --livereload         
          ```
 - Visual Studio Plugin : [Useful for Creating Posts](https://marketplace.visualstudio.com/items?itemName=rohgarg.jekyll-post)
+- Use CDN for managing images & Static Content, CDN can be setup via [JSDeliver](https://www.jsdelivr.com/) which supports github repository.
 
 That sums up my first Post !
